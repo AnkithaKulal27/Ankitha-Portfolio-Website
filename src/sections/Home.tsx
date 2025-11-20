@@ -1,11 +1,10 @@
-import profile from "../assets/ankitha.jpg";
 import { motion } from "motion/react"
 
 const Home = () => {
   return (
     <section id="home" className="h-screen flex flex-col gap-6 justify-center items-center relative overflow-hidden px-5 py-20 text-center">
         <motion.img 
-            src={profile} 
+            src="/Ankitha.jpg" 
             alt="Ankitha" 
             initial={{ scale: 0 }} 
             animate={{ scale: 1, rotate: 360 }} 
