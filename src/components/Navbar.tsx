@@ -9,7 +9,7 @@ const Navbar = () => {
         className='fixed z-50 top-0 w-full bg-neutral-400 flex justify-between items-center p-4'
     >
         <h1 className='text-2xl font-bold'>Ankitha</h1>
-        <ul className='flex gap-5 text-gray-300 font-semibold text-lg'>
+        <ul className='flex flex-wrap gap-3 text-gray-300 font-semibold text-sm md:text-lg'>
             <a href="#home" className='hover:text-white'>Home</a>
             <a href="#about" className='hover:text-white'>About</a>
             <a href="#skills" className='hover:text-white'>Skills</a>
