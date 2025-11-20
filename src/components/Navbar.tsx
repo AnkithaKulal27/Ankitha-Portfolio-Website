@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const NavLink: React.FC<{ href: string; children: React.ReactNode; onClick?: () => void }> = ({ href, children, onClick }) => (
   <a href={href} onClick={onClick} className="block hover:text-white transition-colors">
@@ -36,19 +37,7 @@ const Navbar: React.FC = () => {
           onClick={() => setOpen((s) => !s)}
           className="md:hidden p-2 rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-400"
         >
-
-          {!open ? (
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden>
-              <path d="M4 7h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-              <path d="M4 12h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-              <path d="M4 17h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-            </svg>
-          ) : (
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden>
-              <path d="M6 6l12 12" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-              <path d="M18 6L6 18" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-            </svg>
-          )}
+          {!open ? <Menu size={26} /> : <X size={26} />}
         </button>
       </div>
 
