@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 
 const Home = () => {
   return (
-    <section id="home" className="h-screen flex flex-col gap-6 justify-center items-center relative overflow-hidden px-5 py-20 text-center">
+    <section id="home" className="h-screen flex flex-col text-color1 gap-6 justify-center items-center relative overflow-hidden px-5 py-20 text-center">
         <motion.img 
             src="/Ankitha.jpg" 
             alt="Ankitha" 
@@ -29,7 +29,7 @@ const Home = () => {
         <motion.a 
           whileHover={{ scale: 1.1 }}
           href="#projects" 
-          className="text-lg hover:text-gray-300 hover:text-sm"
+          className="text-lg font-semibold text-color4 hover:text-sm bg-color3 p-2 rounded-lg"
         >
           View my work
         </motion.a>

@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
 const About = () => {
   return (
-    <section id="about" className="px-10 py-25 flex flex-col gap-6">
+    <section id="about" className="px-10 py-25 flex flex-col text-color1 gap-6">
         <motion.h1 
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}

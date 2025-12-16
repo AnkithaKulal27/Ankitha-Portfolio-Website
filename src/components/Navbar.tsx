@@ -16,11 +16,11 @@ const Navbar: React.FC = () => {
       initial={{ y: -30, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 w-full z-50 bg-neutral-400 backdrop-blur-sm border-b border-white/10"
+      className="fixed top-0 left-0 w-full z-50 bg-color1 backdrop-blur-sm border-b border-white/10"
     >
-      <div className="max-w-6xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 py-6 flex items-center justify-between">
         <a href="/" className="flex items-center gap-3">
-          <span className="font-bold text-lg text-neon">Ankitha</span>
+          <span className="font-bold text-xl text-neon">Ankitha</span>
         </a>
 
         <div className="hidden md:flex gap-8 items-center text-gray-300 font-medium">
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
         transition={{ duration: 0.28, ease: "easeInOut" }}
         className="md:hidden overflow-hidden"
       >
-        <div className="px-4 pb-4 pt-2 bg-neutral-400">
+        <div className="px-4 pb-4 pt-2 bg-color1">
           <nav className="flex flex-col gap-3 text-gray-300 font-medium">
             <NavLink href="#home" onClick={() => setOpen(false)}>Home</NavLink>
             <NavLink href="#about" onClick={() => setOpen(false)}>About</NavLink>

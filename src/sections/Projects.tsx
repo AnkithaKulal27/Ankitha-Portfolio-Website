@@ -29,7 +29,7 @@ const Projects = () => {
         },
     ];
   return (
-    <section id="projects" className="px-10 py-25 flex flex-col gap-6">
+    <section id="projects" className="px-10 py-25 flex flex-col text-color1 gap-6">
         <motion.h1 
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -41,12 +41,12 @@ const Projects = () => {
                     initial={{ opacity: 0, scale: 0.5 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }} key={project.id} 
-                    className="p-4 bg-[#0f1629] rounded-lg border-1 border-sky-400/40 shadow-md shadow-neon/20 items-center font-semibold"
+                    className="p-4 bg-color2 text-color4 rounded-lg border-1 border-sky-400/40 shadow-md shadow-neon/20 items-center font-semibold"
                 >
                     <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
                     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         {project.tools.map((tool,index)=>(
-                            <p key={index} className="text-xs p-3 bg-[#0A0F1F] rounded-lg shadow-md border-1 border-sky-400/40 shadow-neon/20 items-center font-semibold">{tool}</p>
+                            <p key={index} className="text-xs p-3 bg-color3/40 rounded-lg shadow-md border-1 border-sky-400/40 shadow-neon/20 items-center font-semibold">{tool}</p>
                         ))}
                     </div>
                 </motion.div>
