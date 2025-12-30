@@ -28,7 +28,7 @@ const Projects = () => {
         {
                 id: 4,
                 title: "Wallpaper Nest App (Flutter)",
-                tools:["Flutter-Dart"],
+                tools:["Flutter-Dart","Rest-API"],
         },
         {
                 id: 5,
