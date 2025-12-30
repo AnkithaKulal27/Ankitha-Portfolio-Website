@@ -3,14 +3,6 @@ import { motion } from "motion/react"
 const Home = () => {
   return (
     <section id="home" className="h-screen flex flex-col text-color1 gap-6 justify-center items-center relative overflow-hidden px-5 py-20 text-center">
-        <motion.img 
-            src="/Ankitha.jpg" 
-            alt="Ankitha" 
-            initial={{ scale: 0 }} 
-            animate={{ scale: 1, rotate: 360 }} 
-            transition={{ duration: 0.5 }}
-            className="rounded-full object-cover w-40 h-40 shadow-xl border-2 border-sky-400/40 relative z-0"
-        />
         <motion.h1 initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }} 
