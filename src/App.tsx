@@ -13,7 +13,7 @@ function App() {
     <motion.div 
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className='bg-color4 text-white scroll-smooth'
+      className='bg-color4 text-white min-h-screen overflow-x-hidden scroll-smooth'
     >
       <Navbar/>
       <Home/>
