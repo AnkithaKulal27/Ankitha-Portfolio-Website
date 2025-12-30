@@ -1,8 +1,11 @@
 import { motion } from "motion/react"
+import { ArrowRight } from 'lucide-react';
+
 type Project={
         id:number;
         title:string;
         tools:string[];
+        hosturl?:string;
     }
     
 const Projects = () => {
@@ -27,6 +30,12 @@ const Projects = () => {
                 title: "Wallpaper Nest App (Flutter)",
                 tools:["Flutter-Dart"],
         },
+        {
+                id: 5,
+                title: "Product Store",
+                tools:["React","TypeScript","Tailwind CSS","Rest-API"],
+                hosturl:"https://product-store-using-rest-api.vercel.app/",
+        },
     ];
   return (
     <section id="projects" className="px-10 py-25 flex flex-col text-color1 gap-6">
@@ -49,6 +58,12 @@ const Projects = () => {
                             <p key={index} className="text-xs p-3 bg-color3/40 rounded-lg shadow-md border-1 border-sky-400/40 shadow-neon/20 items-center font-semibold">{tool}</p>
                         ))}
                     </div>
+                    {project.hosturl?(
+                        <div className="flex gap-2 mt-5 justify-end items-center">
+                            <a href={project.hosturl} target="_blank">Live Demo</a>
+                            <ArrowRight className="mt-1" size={20}/>
+                        </div>
+                    ):null}
                 </motion.div>
             ))}
         </div>

@@ -1,6 +1,6 @@
 import { motion } from "motion/react"
 const Skills = () => {
-    const skills=['HTML','CSS','Javascript','PHP','MERN','MySQL'];
+    const skills=['HTML','CSS','Javascript','React','Bootstrap','TailwindCSS','PHP-Laravel','MySQL','Node','Framer-Motion','Git'];
   return (
     <section id="skills" className="px-10 py-25 flex flex-col text-color1 gap-6">
         <motion.h1 
