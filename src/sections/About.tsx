@@ -6,14 +6,19 @@ const About = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          viewport={{ once: true }} className="text-4xl font-bold border-l-4 pl-3">About</motion.h1>
+          viewport={{ once: true }} 
+          className="text-4xl font-bold border-l-4 pl-3">About</motion.h1>
         <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0,x: 50 }}
+          whileInView={{ opacity: 1,x: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true }}className="leading-relaxed text-lg">I'm Ankitha, a Web Developer focused on building clean, responsive and user‑
+          viewport={{ once: true }}
+          className="leading-relaxed text-lg"
+          >
+            I'm Ankitha, a Web Developer focused on building clean, responsive and user‑
             friendly websites. I enjoy combining modern UI design with smooth animations
-            to deliver beautiful digital experiences.</motion.p>
+            to deliver beautiful digital experiences.
+          </motion.p>
     </section>
   )
 }

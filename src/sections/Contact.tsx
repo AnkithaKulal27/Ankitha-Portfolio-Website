@@ -7,12 +7,16 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }} className="text-4xl font-bold border-l-4 pl-3">Contact</motion.h1>
-        <div className="items-center justify-center flex flex-col gap-5">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          viewport={{ once: true }} className="items-center justify-center flex flex-col gap-5">
             <h3 className="text-3xl font-semibold tracking-wider">Give a Call</h3>
             <h2 className="text-4xl font-bold tracking-wider">+8147876576</h2>
             <h5 className="tracking-wide">ankithakulal57@gmail.com</h5>
             <p className="tracking-wide">Perdoor,Udupi,Karnataka</p>
-        </div>
+        </motion.div>
     </section>
   )
 }
